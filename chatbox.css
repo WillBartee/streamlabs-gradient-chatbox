@@ -1,0 +1,58 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:700);
+
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  background: {background_color};
+  text-shadow: 0 0 1px #000, 0 0 2px #000;
+  line-height: 1.5em;
+}
+
+.message {
+  font-family: {message_font};
+  font-weight: {message_weight};
+  font-size: {font_size};
+  color: var(--endColor);
+  --opacityStart: 0;
+}
+
+.name {
+  font-size: {name_font_size};
+  font-family: {name_font};
+  color: var(--endColor);
+  --opacityStart: 0;
+}
+
+.animate {
+  animation: fader .5s ease forwards, fadeOut 0.5s ease {message_hide_delay} forwards;
+  -webkit-animation: fader .5s ease forwards, fadeOut 0.5s ease {message_hide_delay} forwards;
+}
+
+@keyframes fader {
+  0% {
+    transform: translateY(200px);
+    opacity: var(--opacityStart);
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: var(--opacityEnd);
+  }
+}
+
+#log {
+  display: table;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 0 10px 10px;
+  width: 100%;
+  table-layout: fixed;
+}

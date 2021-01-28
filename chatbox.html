@@ -1,0 +1,19 @@
+<!-- item will be appened to this layout -->
+<div id="log" class="sl__chat__layout">
+  <param id="jsconfig"
+        nameColorList="{name_color_list}"
+        messageColorList="{message_color_list}"
+  			opacitySelect="{opacity_select}"
+  />
+</div>
+
+<!-- chat item -->
+<script type="text/template" id="chatlist_item">
+  <div id="{messageId}" class="wrap animate" data-from="{from}" data-id="{messageId}">
+    <div class="meta">
+      <span class="badges"></span>
+      <span class="name">{from}:</span>
+    </div>
+    <span class="message">{message}</span>
+  </div>
+</script>

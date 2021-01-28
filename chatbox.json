@@ -1,0 +1,40 @@
+{
+  "name_color_list": {
+    "label": "Color List (comma-separated)",
+    "type": "textfield",
+    "value": "red, white, blue"
+  },
+  "name_font": {
+    "label": "Username Font",
+    "type": "fontpicker",
+    "value": "Open Sans"
+  },
+  "name_font_size": {
+      "label": "Username Font Size",
+      "type": "slider",
+      "name": "",
+      "value": 20,
+      "max": 60,
+      "min": 10,
+      "steps": 1
+  },
+  "message_color_list": {
+    "label": "Color List (comma-separated)",
+    "type": "textfield",
+    "value": "red, white, blue"
+  },
+  "message_font": {
+    "label": "Message Font",
+    "type": "fontpicker",
+    "value": "Open Sans"
+  },
+  "opacity_select": {
+    "label": "Positional Opacity",
+    "type": "dropdown",
+    "options": {
+      "yes": "yes",
+      "no": "no"
+    },
+    "value": "yes"
+  }
+}
